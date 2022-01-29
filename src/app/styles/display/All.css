@@ -1,0 +1,90 @@
+.full-width {
+  min-width: 100%;
+}
+
+.page-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  font-size: 32px;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  column-gap: 5%;
+  row-gap: 40px;
+  margin-top: 32px;
+  padding-bottom: 32px;
+}
+
+.grid .item {
+  width: 30%;
+}
+
+.grid .item .item-background {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 8px 0px;
+  overflow: hidden;
+}
+
+.grid .item .item-background img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;  
+}
+
+.grid .item .item-background img:hover {
+  transform: scale(1.05);
+}
+
+.grid .item .item-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.grid .item .item-info .title a {
+  font-size: 14px;
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.grid .item .item-info .title a:hover {
+  color: var(--green);
+}
+
+.grid .item .item-info .rating {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-left: 12px;
+}
+
+.response {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.response.error {
+  color: var(--error);
+}
+
+@media only screen and (max-width: 500px) {
+  .grid .item {
+    width: 100%;
+  }
+}
